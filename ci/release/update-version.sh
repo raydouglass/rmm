@@ -7,7 +7,7 @@
 # bash update-version.sh <type>
 #     where <type> is either `major`, `minor`, `patch`
 
-set -e
+set -ex
 
 # Grab argument for release type
 RELEASE_TYPE=$1
