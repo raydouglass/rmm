@@ -7,6 +7,8 @@
 - PR #396 Remove deprecated RMM APIs
 - PR #425 Add CUDA per-thread default stream support and thread safety to `pool_memory_resource`
 - PR #436 Always build and test with per-thread default stream enabled in the GPU CI build
+- PR #444 Add `owning_wrapper` to simplify lifetime management of resources and their upstreams
+- PR #450 Add support for new build process (Project Flash)
 
 ## Improvements
 
@@ -24,8 +26,12 @@
 - PR #414 Add element-wise access for device_uvector
 - PR #421 Capture thread id in logging and improve logger testing
 - PR #426 Added multi-threaded support to replay benchmark.
+- PR #429 Fix debug build and add new CUDA assert utility.
 - PR #435 Update conda upload versions for new supported CUDA/Python
 - PR #437 Test with `pickle5` (for older Python versions)
+- PR #443 Remove thread safe adaptor from PoolMemoryResource
+- PR #445 Make all resource operators/ctors explicit
+- PR #447 Update Python README with info about DeviceBuffer/MemoryResource and external libraries
 
 ## Bug Fixes
 
