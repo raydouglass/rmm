@@ -19,6 +19,7 @@ ARGS=$*
 # script, and that this script resides in the repo dir!
 REPODIR=$(cd $(dirname $0); pwd)
 
+
 VALIDARGS="clean librmm rmm -v -g -n -s --ptds -h"
 HELP="$0 [clean] [librmm] [rmm] [-v] [-g] [-n] [-s] [--ptds] [-h]
    clean  - remove all existing build artifacts and configuration (start over)
