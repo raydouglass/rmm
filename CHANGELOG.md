@@ -10,27 +10,7 @@
 
 - PR #592 Add `auto_flush` to `make_logging_adaptor`
 - PR #602 Fix `device_scalar` and its tests so that they use the correct CUDA stream
-- PR #621 Make `rmm::cuda_stream_default` a `constexpr`
-- PR #625 Use `librmm` conda artifact when building `rmm` conda package
 
-# RMM 0.16.0 (21 Oct 2020)
-
-## New Features
-
-- PR #529 Add debug logging and fix multithreaded replay benchmark
-- PR #560 Remove deprecated `get/set_default_resource` APIs
-- PR #543 Add an arena-based memory resource
-- PR #580 Install CMake config with RMM
-- PR #591 Allow the replay bench to simulate different GPU memory sizes
-- PR #594 Adding limiting memory resource adaptor
-
-## Improvements
-
-- PR #474 Use CMake find_package(CUDAToolkit)
-- PR #477 Just use `None` for `strides` in `DeviceBuffer`
-- PR #528 Add maximum_pool_size parameter to reinitialize API
-- PR #532 Merge free lists in pool_memory_resource to defragment before growing from upstream
-- PR #537 Add CMake option to disable deprecation warnings
 - PR #541 Refine CMakeLists.txt to make it easy to import by external projects
 - PR #538 Upgrade CUB and Thrust to the latest commits
 - PR #542 Pin conda spdlog versions to 1.7.0
