@@ -3,18 +3,6 @@
 [![Build Status](https://gpuci.gpuopenanalytics.com/job/rapidsai/job/gpuci/job/rmm/job/branches/job/rmm-branch-pipeline/badge/icon)](https://gpuci.gpuopenanalytics.com/job/rapidsai/job/gpuci/job/rmm/job/branches/job/rmm-branch-pipeline/)
 
 
-Achieving optimal performance in GPU-centric workflows frequently requires customizing how host and
-device memory are allocated. For example, using "pinned" host memory for asynchronous
-host <-> device memory transfers, or using a device memory pool sub-allocator to reduce the cost of
-dynamic device memory allocation. 
-
-The goal of the RAPIDS Memory Manager (RMM) is to provide:
-- A common interface that allows customizing [device](#device_memory_resource) and
-  [host](#host_memory_resource) memory allocation
-- A collection of [implementations](#available-resources) of the interface
-- A collection of [data structures](#device-data-structures) that use the interface for memory allocation
-
-For information on the interface RMM provides and how to use RMM in your C++ code, see
 [below](#using-rmm-in-c++).
 
 **NOTE:** For the latest stable [README.md](https://github.com/rapidsai/rmm/blob/main/README.md)
